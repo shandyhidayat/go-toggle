@@ -4,7 +4,7 @@ FROM golang:1.14-alpine3.12
 ## image that will hold our application source
 ## files
 
-RUN apk update && apk install git
+RUN apk update && apk add git
 
 RUN mkdir /app
 ## We copy everything in the root directory
