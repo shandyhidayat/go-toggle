@@ -25,7 +25,7 @@ func getPost(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	var post1 Post
 	post1.ID = "12345"
-	post1.Title = "Welcome to go-toggle"
-	post1.Body = "Welcome to go-toggle"
+	post1.Title = "Welcome to go-toggle for GCP"
+	post1.Body = "Welcome to go-toggle for GCP"
 	json.NewEncoder(w).Encode(post1)
 }
