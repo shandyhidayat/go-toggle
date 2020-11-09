@@ -1,8 +1,11 @@
 ## go application
-FROM golang:1.12.0-alpine3.9
+FROM golang:1.14-alpine3.12
 ## We create an /app directory within our
 ## image that will hold our application source
 ## files
+
+RUN apk update && apk install git
+
 RUN mkdir /app
 ## We copy everything in the root directory
 ## into our /app directory
